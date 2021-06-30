@@ -1,0 +1,102 @@
+body {
+    padding: 20px;
+}
+
+.inline {
+    display: inline;
+    background-color: blueviolet;
+    padding: 50px 40mm 0 20px;
+     /*height: 800px;  will ignore */
+}
+
+.block {
+    display: block;
+    height: 456px;
+    background-color: blueviolet;
+    margin: 20px;
+    border: 5px solid black;
+    box-sizing: border-box;
+}
+
+.inline-block {
+    display: inline-block;
+    background-color: blueviolet;
+    margin: 30px;
+    padding: 20px;
+}
+
+
+.table {
+    display: table;
+    width: 300px;
+    float: left;
+}
+
+.table-row {
+    display: table-row;
+}
+
+.table-cell {
+    display: table-cell;
+    vertical-align: middle
+}
+
+
+.list-items {
+    display: list-item;
+    clear: left;
+}
+
+
+.run-in {
+    display: run-in;
+}
+
+
+.flex {
+    display: flex;
+}
+
+
+.none {
+    display: none;
+}
+
+
+.card {
+    width: 300px;
+    position: relative;
+    float: left; 
+
+}
+
+#bgImage {
+    width: 300px;
+    z-index: 1;
+}
+
+.card:hover div{
+    color: white;
+    height: 100%; 
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 2;
+    display: block;
+}
+
+table {
+    width: 100%;
+    border-spacing: 0;
+}
+
+tr:nth-child(1) {
+    background: #666;
+    color: #fff;
+}
+
+tr:nth-child(2n) {
+    background: #f0f0f0;
+}

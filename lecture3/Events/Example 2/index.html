@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Example</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./index.js"></script>
+</head>
+
+<body>
+    <p>Material by <a
+            href='https://developer.mozilla.org/en-US/docs/Web/API/Event/Comparison_of_Event_Targets'>developer.mozilla.org</a>
+    </p>
+    <table>
+        <thead>
+            <tr>
+                <td class="standard">Original target dispatching the event <small>event.target</small></td>
+                <td class="standard">Target who's event listener is being processed <small>event.currentTarget</small>
+                </td>
+                <td class="standard">Identify other element (if any) involved in the event
+                    <small>event.relatedTarget</small></td>
+                <td class="non-standard">If there was a retargetting of the event for some reason <small>
+                        event.explicitOriginalTarget</small> contains the target before retargetting (never contains
+                    anonymous targets)</td>
+                <td class="non-standard">If there was a retargetting of the event for some reason <small>
+                        event.originalTarget</small> contains the target before retargetting (may contain anonymous
+                    targets)</td>
+            </tr>
+        </thead>
+        <tr>
+            <td id="target"></td>
+            <td id="currentTarget"></td>
+            <td id="relatedTarget"></td>
+            <td id="explicitOriginalTarget"></td>
+            <td id="originalTarget"></td>
+        </tr>
+    </table>
+    <p>Clicking on the text will show the difference between explicitOriginalTarget, originalTarget and target</p>
+</body>
+
+</html>

@@ -1,0 +1,17 @@
+table {
+    border-collapse: collapse;
+    height: 150px;
+    width: 100%;
+}
+td {
+    border: 1px solid #afa;
+    font-weight: bold;
+    padding: 5px;
+    min-height: 30px;
+}
+.standard {
+    background-color: #bac;
+}
+.non-standard {
+    background-color: #902D37;
+}
